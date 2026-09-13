@@ -20,7 +20,12 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('opentype'), url('../fonts/Roboto/Roboto-Regular.otf') format('truetype');
+    src: url('../fonts/Roboto/Roboto-Regular.otf') format('opentype'), url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'GoogleSans';
+    src: url('../fonts/GoogleSans/GoogleSans-Regular.otf') format('opentype'), url('../fonts/GoogleSans/GoogleSans-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -33,6 +38,16 @@
     --cor2: #00873B;
     --cor3: #298FD1;
     --cor4: #044B79;
+
+    --lightColor1: #FBFDF8;
+    --lightColor2: #D1E8D5;
+    --lightColor3: #11774D;
+    --lightColor4: #016E42;
+
+    --darkColor1: #171A18;
+    --darkColor2: #2f3731;
+    --darkColor3: #36493C;
+    --darkColor4: #8CB1BA;
 
     --palette01: #FFB74D;
     --palette02: #90A4AE;
@@ -60,437 +75,240 @@
     --fonte_samsung: 'Euclid', sans-serif;
     --fonte_android: 'Android', sans-serif;
     --fonte_roboto: 'Roboto', sans-serif;
+    --fonte_google: 'GoogleSans', sans-serif;
 }
 
+* {
+    font-family: var(--fonte_samsung), sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Impede que o padding "estoure" o tamanho da tela */
+    box-sizing: border-box;
+}
 
-
-
+/* ------------------------------------ */
 
 /* header */
 header {
-    background-image: linear-gradient(to top, var(--cor3), var(--cor1) 50%);
-}
-
-/* header */
-div#headerTitle {
-    text-indent: 20%;
-    align-items: end;
-    padding: 50px 10px 10px 10px;
-}
-
-/* header */
-img#perfil {
-    position: absolute;
-    right: 2vw;
-    transform: translate(0px, -90px);
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    border: 5px solid var(--black);
-    box-shadow: 2px 2px 2px var(--black);
-}
-
-/* header */
-nav#headerUL {
-    padding: 10px;
-}
-
-
-/* header */
-nav#headerUL>ul {
-    font-size: 1.5em;
-    font-family: Euclid;
-    font-weight: bolder;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1vw;
-}
-
-/* header */
-nav#headerUL ul>li {
-    list-style-type: none;
-    /*
-    margin-left: 1vw;
-    margin-bottom: 10px;
-    */
-}
-
-/* header */
-nav#headerUL a {
-    text-shadow: 1px 1px 1px var(--black);
-    color: var(--liteblack);
-    text-decoration: none;
-    padding: 2px 10px;
-    border-left: 2px solid white;
-    border-radius: 3px 10px;
-    border-right: 2px solid white;
-}
-
-/* header */
-nav#headerUL li>a:hover {
-    background-image: linear-gradient(to top, var(--liteWhite) 5%, var(--cor1) 30%);
-    box-shadow: 2px 2px 2px var(--black);
-    color: var(--liteWhite);
-    transition: .5s;
-}
-
-
-
-
-
-/* main */
-main {
-    height: auto;
-    background-color: burlywood;
-    padding: 20px;
-    overflow: hidden;
-    border-top: 5px solid var(--black);
-    border-bottom: 5px solid var(--black);
-}
-
-/* section.aprendizado { codigo - carousel } */
-
-section.aprendizado>h2 {
-    font-family: Android;
-    letter-spacing: 5px;
-    font-size: 3em;
-    padding: 20px;
-}
-
-
-/* main */
-div.aprendizadoConteudo>div.resumoApp {
-    height: 600px;
-    max-width: 600px;
-    min-width: none;
-    border-radius: 5px 60px;
-    margin: 10px 20px 40px 20px;
-    padding: 20px;
-}
-
-/* main */
-div.resumoApp>h3 {
-    text-align: center;
-    margin: 20px;
-    font-family: Euclid;
-}
-
-/* main */
-div.resumoApp>p {
-    font-family: Euclid;
-    font-size: 1.2em;
-    color: var(--liteblack);
-    font-weight: bold;
-    max-width: 600px;
-    text-align: justify;
-}
-
-/* main */
-div.smartphone {
-    position: relative;
-    height: 640px;
-    width: 288px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 45px;
-    margin: 20px;
-}
-
-/* main */
-img.frameOverlay {
-    position: absolute;
-    height: 100%;
+    background-color: var(--darkColor1);
     width: 100%;
-    z-index: 2;
+    padding: 20px 10px;
 }
 
-/* main */
-video.screenContent {
-    position: absolute;
-    margin: auto;
-    height: 92%;
-    width: 93%;
-    z-index: 1;
-    padding-top: 9px;
+/* ------------------------------------ */
+
+/* header - title */
+#headerTitle {
+    width: 100%;
+    color: var(--darkColor4);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+    background-color: var(--darkColor1);
+}
+
+#headerTitle>h2 {
+    font-size: 1rem;
+}
+
+#headerTitle>h1 {
+    font-size: 1.4rem;
+}
+
+/* Menu de Navegação no Mobile */
+#headerNav {
+    padding: 10px 0px;
+}
+
+#headerNav>ul {
+    background-color: var(--darkColor2);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
     border-radius: 30px;
 }
 
-
-
-
-
-/* footer */
-footer {
-    background-image: linear-gradient(to top, var(--cor4) 70%, var(--liteWhite) 200%);
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-}
-
-/* footer */
-footer section {
-    width: 25%;
-    margin: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 5px 60px;
-    background-image: linear-gradient(to top, var(--cor3), var(--cor1) 50%);
-    transition: .5s;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* footer */
-footer section:hover {
-    transform: translate(10px, 10px);
-    transition: .5s;
-}
-
-/* footer */
-footer img {
-    min-height: 50px;
-    min-width: 50px;
-    max-height: 6vw;
-    max-width: 6vw;
-    border-radius: 50%;
-    transition: .5s;
-}
-
-/* footer */
-footer>section:hover img {
-    transform: scale(1.2);
-    transition: .5s;
-    border-radius: 3px 40px;
-}
-
-/* footer */
-footer div.socialMedia {
-    margin: auto;
-}
-
-/* footer */
-footer a {
-    text-decoration: none;
-    color: var(--liteblack);
-}
-
-/* footer */
-footer a:hover {
-    color: var(--liteWhite);
-    transition: .5s;
-}
-
-
-
-
-
-/* h1 - h6 */
-h1 {
-    font-family: EuclidBold;
-    font-size: 3em;
-    color: var(--liteblack);
-    text-shadow: 1px 1px 1px var(--black);
-}
-
-/* h1 - h6 */
-h2 {
-    font-family: EuclidBold;
-    font-size: 2em;
-    color: var(--liteblack);
-    text-shadow: 1px 1px 1px var(--black);
-}
-
-/* h1 - h6 */
-h3 {
-    font-family: Euclid;
-    font-size: 1.5em;
-    text-shadow: 1px 1px 1px var(--black);
-}
-
-
-
-
-
-/* main */
-section.aprendizado {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    /* Começam invisíveis */
-    transition: opacity 1s ease-in-out;
-    /* O efeito de esmaecer */
-    pointer-events: none;
-    /* Impede interação com slides invisíveis */
+#headerNav li {
+    background-color: var(--darkColor3);
     border-radius: 50px;
-
-    background-image: url(../images/background_05gauss.png);
-    background-position: center;
-    background-size: cover;
 }
 
-div.aprendizadoConteudo {
+#headerNav a {
+    color: var(--darkColor4);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    text-decoration: none;
     justify-content: center;
     align-items: center;
-    gap: 10%;
-}
-
-/* Apenas o slide ativo fica visível */
-section.aprendizado.active {
-    opacity: 1;
-    pointer-events: auto;
-    position: relative;
-    /* O slide ativo define a altura se necessário */
-}
-
-
-
-
-
-/* Slide colorPalette */
-div#smart01,
-div#desc01 {
-    background-color: var(--palette01);
-    box-shadow: 1px 1px 20px var(--shadow01);
-}
-
-section#app01>h2 {
-    color: var(--palette01);
-    text-shadow: 2px 2px 5px var(--shadow01);
-}
-
-
-
-/* Slide colorPalette */
-div#smart02,
-div#desc02 {
-    background-color: var(--palette02);
-    box-shadow: 1px 1px 20px var(--shadow02);
-}
-
-section#app02>h2 {
-    color: var(--palette02);
-    text-shadow: 2px 2px 5px var(--shadow02);
-}
-
-
-
-/* Slide colorPalette */
-div#smart03,
-div#desc03 {
-    background-color: var(--palette03);
-    box-shadow: 1px 1px 20px var(--shadow03);
-}
-
-section#app03>h2 {
-    color: var(--palette03);
-    text-shadow: 2px 2px 5px var(--shadow03);
-}
-
-
-
-/* Slide colorPalette */
-div#smart04,
-div#desc04 {
-    background-color: var(--palette04);
-    box-shadow: 1px 1px 20px var(--shadow04);
-}
-
-section#app04>h2 {
-    color: var(--palette04);
-    text-shadow: 2px 2px 5px var(--shadow04);
-}
-
-
-
-/* Slide colorPalette */
-div#smart05,
-div#desc05 {
-    background-color: var(--palette05);
-    box-shadow: 1px 1px 20px var(--shadow05);
-}
-
-section#app05>h2 {
-    color: var(--palette05);
-    text-shadow: 2px 2px 5px var(--shadow05);
-}
-
-
-
-
-
-/* carousel */
-#carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-/* carousel */
-#carousel-track {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    display: block;
-    /* Remove o flex horizontal */
-}
-
-
-
-
-
-/* Setas e Pontos */
-.btn-prev,
-.btn-next {
-    position: absolute;
-    top: 50%;
-    background: rgba(0, 0, 0, 0.3);
-    color: white;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-    /*
-    border-radius: 50%;
-    */
-    transform: translateY(50%);
-    z-index: 10;
-}
-
-.btn-prev {
-    left: 20px;
-}
-
-.btn-next {
-    right: 20px;
-}
-
-.carousel-dots {
-    position: absolute;
-    bottom: 10px;
-    min-width: 100%;
-    display: flex;
-    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 0px;
     gap: 20px;
 }
 
-.dot {
-    width: 12px;
-    height: 12px;
-    background: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
+#headerNav i {
+    font-size: 1.8rem;
 }
 
-.dot.active {
-    background: var(--cor1);
+#headerNav p {
+    /*width: 100%;*/
+}
+
+/* ------------------------------------ */
+
+/* carousel cards */
+.carousel-container {
+    /* Coloca os <section> um ao lado do outro */
+    display: flex;
+    /* Ativa a rolagem horizontal */
+    overflow-x: auto;
+    /* Trava o scroll em cada item */
+    scroll-snap-type: x mandatory;
+    /* Espaço entre cada card */
+    gap: 10px;
+    padding: 0px 10px;
+
+    /* Esconde a barra de rolagem visual no mobile */
+    scrollbar-width: none;
+    scrollbar-color: #dd0909 #14b314;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    /* Define que cada card ocupa 90% da largura visível da tela */
+    flex: 0 0 90%;
+    scroll-snap-align: center;
+    padding: 0px 10px;
+}
+
+/* ------------------------------------ */
+
+/* main */
+main {
+    background-color: var(--darkColor2);
+    padding: 20px 0px;
+}
+
+/* ------------------------------------ */
+
+.tema {
+    margin: 100px 0px;
+}
+
+.tema>h1 {
+    text-align: center;
+    border-radius: 50px;
+    padding: 20px 0px;
+    font-size: 2.5rem;
+    margin: 20px;
+    color: var(--darkColor4);
+    background-color: var(--darkColor1);
+}
+
+/* ------------------------------------ */
+
+/* section.aprendizado card */
+.aprendizado {
+    background-color: var(--darkColor4);
+    border-radius: 30px;
+}
+
+.aprendizado>h2 {
+    padding: 10px 0px;
+    font-size: 2rem;
+    color: var(--darkColor1);
+    text-align: center;
+}
+
+.app {
+    text-align: center;
+}
+
+.app>h3 {
+    font-size: 2rem;
+    padding: 20px 0px;
+    color: var(--darkColor1);
+}
+
+.app>video {
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+/* card part.2 - app_desc*/
+.desc {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.desc ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.desc li {
+    list-style: none;
+}
+
+.desc p {
+    text-align: justify;
+    text-indent: 30px;
+    color: var(--darkColor1);
+    /*
+    line-height: normal;
+    letter-spacing: normal;
+    */
+}
+
+/* ------------------------------------ */
+
+/* footer#contact contacts */
+footer {
+    background-color: var(--darkColor1);
+    padding: 50px 10px;
+}
+
+#contact>ul {
+    background-color: var(--darkColor2);
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+#contact li {
+    background-color: var(--darkColor3);
+    border-radius: 50px;
+}
+
+#contact a {
+    color: var(--darkColor4);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    /*justify-content: center;*/
+    align-items: center;
+    font-size: 2rem;
+    padding: 0px 50px;
+    border-radius: 50px;
+}
+
+#contact img {
+    border-radius: 20px;
+    width: 70px;
+    padding: 10px;
+}
+
+#contact p {
+    width: 100%;
+    text-align: center;
 }

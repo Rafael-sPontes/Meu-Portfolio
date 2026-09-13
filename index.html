@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>rafael-spontes Porfolio</title>
 </head>
 
@@ -13,246 +14,263 @@
 <body>
 
     <header>
-
         <div id="headerTitle">
             <h2>Bem vindo!</h2>
             <h1>Rafael S. Pontes - Portfolio</h1>
+            <h2>Desenvolvedor Mobile Android</h2>
         </div>
-        <nav id="headerUL">
+        <nav id="headerNav">
             <ul>
-                <li><a href="#">APRESENTAÇÃO</a></li>
-                <li><a href="#">PROJETOS</a></li>
-                <li><a href="#">APRENDIZADO</a></li>
-                <li><a href="#">CONTATO</a></li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">person</i>
+                        <p>Apresentação</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">code</i>
+                        <p>Projetos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">school</i>
+                        <p>Aprendizado</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-symbols-outlined">mail</i>
+                        <p>Contato</p>
+                    </a>
+                </li>
             </ul>
-            <img src="images/perfil.jpg" alt="Imagem de perfil" id="perfil">
         </nav>
-
     </header>
 
-
-
-
-
     <main>
+        <!-- Seção principal do carrossel -->
+        <!-- <section class="secao-carrossel"></section> -->
 
-        <div id="carousel-container">
-            <div id="carousel-track">
-                <section id="app01" class="aprendizado">
-                    <h2>Aprendizado - Stack Mobile</h2>
-                    <div class="aprendizadoConteudo">
-                        <div id="smart01" class="smartphone">
-                            <img src="images/phone_frame.png" alt="FRAME1" class="frameOverlay">
-                            <video src="videos/576_1280.webm" class="screenContent" autoplay loop muted playsinline>
-                        </div>
-                        <div id="desc01" class="resumoApp">
-                            <h3>Nome do App 01</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero debitis
-                                perspiciatis
-                                nostrum
-                                consectetur fugit quos sunt dolores autem tempore, fugiat itaque eveniet et. Dolore
-                                aspernatur
-                                dolorem rerum aliquam accusantium.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laborum perferendis eaque
-                                a.
-                                Dolorum,
-                                labore voluptatem eveniet debitis quia mollitia. Eius, quia perspiciatis! Veritatis
-                                quasi,
-                                autem
-                                blanditiis enim ex inventore?
-                            </p>
-                        </div>
-                    </div>
-                </section>
+        <section class="tema">
+            <h1>Aprendizado</h1>
 
-                <section id="app02" class="aprendizado">
-                    <h2>Aprendizado - Stack Mobile</h2>
-                    <div class="aprendizadoConteudo">
-                        <div id="smart02" class="smartphone">
-                            <img src="images/phone_frame.png" alt="FRAME2" class="frameOverlay">
-                            <video src="videos/576_1280.webm" class="screenContent" autoplay loop muted playsinline>
-                        </div>
-                        <div id="desc02" class="resumoApp">
+            <section class="carousel-container">
+
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <!-- O Contêiner da Rolagem (Tracks) -->
+                        <div class="app">
                             <h3>Nome do App 02</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero debitis
-                                perspiciatis
-                                nostrum
-                                consectetur fugit quos sunt dolores autem tempore, fugiat itaque eveniet et. Dolore
-                                aspernatur
-                                dolorem rerum aliquam accusantium.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laborum perferendis eaque
-                                a.
-                                Dolorum,
-                                labore voluptatem eveniet debitis quia mollitia. Eius, quia perspiciatis! Veritatis
-                                quasi,
-                                autem
-                                blanditiis enim ex inventore?
-                            </p>
+                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
                         </div>
-                    </div>
-                </section>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
+                                        alias
+                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
+                                        magni,
+                                        suscipit atque dignissimos molestias cum beatae.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
+                                        autem
+                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
+                                        maiores
+                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
+                                        repellendus
+                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
+                                        aspernatur
+                                        dicta
+                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
+                                </li>
+                            </ul>
+                        </div>
+                </article>
 
-                <section id="app03" class="aprendizado">
-                    <h2>Aprendizado - Stack Mobile</h2>
-                    <div class="aprendizadoConteudo">
-                        <div id="smart03" class="smartphone">
-                            <img src="images/phone_frame.png" alt="FRAME3" class="frameOverlay">
-                            <video src="videos/576_1280.webm" class="screenContent" autoplay loop muted playsinline>
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <!-- O Contêiner da Rolagem (Tracks) -->
+                        <div class="app">
+                            <h3>Nome do App 02</h3>
+                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
                         </div>
-                        <div id="desc03" class="resumoApp">
-                            <h3>Nome do App 03</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero debitis
-                                perspiciatis
-                                nostrum
-                                consectetur fugit quos sunt dolores autem tempore, fugiat itaque eveniet et. Dolore
-                                aspernatur
-                                dolorem rerum aliquam accusantium.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laborum perferendis eaque
-                                a.
-                                Dolorum,
-                                labore voluptatem eveniet debitis quia mollitia. Eius, quia perspiciatis! Veritatis
-                                quasi,
-                                autem
-                                blanditiis enim ex inventore?
-                            </p>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
+                                        alias
+                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
+                                        magni,
+                                        suscipit atque dignissimos molestias cum beatae.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
+                                        autem
+                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
+                                        maiores
+                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
+                                        repellendus
+                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
+                                        aspernatur
+                                        dicta
+                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
+                                </li>
+                            </ul>
                         </div>
-                    </div>
-                </section>
+                </article>
 
-                <section id="app04" class="aprendizado">
-                    <h2>Aprendizado - Stack Mobile</h2>
-                    <div class="aprendizadoConteudo">
-                        <div id="smart04" class="smartphone">
-                            <img src="images/phone_frame.png" alt="FRAME4" class="frameOverlay">
-                            <video src="videos/576_1280.webm" class="screenContent" autoplay loop muted playsinline>
-                        </div>
-                        <div id="desc04" class="resumoApp">
-                            <h3>Nome do App 04</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero debitis
-                                perspiciatis
-                                nostrum
-                                consectetur fugit quos sunt dolores autem tempore, fugiat itaque eveniet et. Dolore
-                                aspernatur
-                                dolorem rerum aliquam accusantium.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laborum perferendis eaque
-                                a.
-                                Dolorum,
-                                labore voluptatem eveniet debitis quia mollitia. Eius, quia perspiciatis! Veritatis
-                                quasi,
-                                autem
-                                blanditiis enim ex inventore?
-                            </p>
-                        </div>
-                    </div>
-                </section>
+                <!-- Contêiner de dots deste carrossel -->
+                <!-- <div class="carousel-dots"></div> -->
+            </section>
+        </section>
 
-                <section id="app05" class="aprendizado">
-                    <h2>Aprendizado - Stack Mobile</h2>
-                    <div class="aprendizadoConteudo">
-                        <div id="smart05" class="smartphone">
-                            <img src="images/phone_frame.png" alt="FRAME5" class="frameOverlay">
-                            <video src="videos/576_1280.webm" class="screenContent" autoplay loop muted playsinline>
-                        </div>
-                        <div id="desc05" class="resumoApp">
-                            <h3>Nome do App 05</h3>
-                            <p>
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum libero debitis
-                                perspiciatis
-                                nostrum
-                                consectetur fugit quos sunt dolores autem tempore, fugiat itaque eveniet et. Dolore
-                                aspernatur
-                                dolorem rerum aliquam accusantium.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius laborum perferendis eaque
-                                a.
-                                Dolorum,
-                                labore voluptatem eveniet debitis quia mollitia. Eius, quia perspiciatis! Veritatis
-                                quasi,
-                                autem
-                                blanditiis enim ex inventore?
-                            </p>
-                        </div>
-                    </div>
-                </section>
+        <!-- ------------------------------ -->
 
-                <button class="btn-prev" onclick="moveSlide(-1)">&#10094;</button>
-                <button class="btn-next" onclick="moveSlide(1)">&#10095;</button>
+        <section class="tema">
+            <h1>Projetos</h1>
 
-                <div class="carousel-dots">
-                    <span class="dot active" onclick="currentSlide(0)"></span>
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                </div>
-            </div>
-        </div>
+            <section class="carousel-container">
+
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <!-- O Contêiner da Rolagem (Tracks) -->
+                        <div class="app">
+                            <h3>Nome do App 02</h3>
+                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
+                                        alias
+                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
+                                        magni,
+                                        suscipit atque dignissimos molestias cum beatae.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
+                                        autem
+                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
+                                        maiores
+                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
+                                        repellendus
+                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
+                                        aspernatur
+                                        dicta
+                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
+                                </li>
+                            </ul>
+                        </div>
+                </article>
+
+                <!-- ------------ -->
+
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <!-- O Contêiner da Rolagem (Tracks) -->
+                        <div class="app">
+                            <h3>Nome do App 02</h3>
+                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
+                        </div>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
+                                        alias
+                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
+                                        magni,
+                                        suscipit atque dignissimos molestias cum beatae.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
+                                        autem
+                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
+                                        maiores
+                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
+                                </li>
+                                <li>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
+                                        repellendus
+                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
+                                        aspernatur
+                                        dicta
+                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
+                                </li>
+                            </ul>
+                        </div>
+                </article>
+
+                <!-- Contêiner de dots deste carrossel -->
+                <!-- <div class="carousel-dots"></div> -->
+            </section>
+        </section>
 
     </main>
 
-
-
-
-
     <footer>
-
-        <section>
-            <img src="images/github_icon.jpg" alt="GitHub">
-            <div class="socialMedia">
-                <a href="https://github.com/Rafael-sPontes" target="_blank" rel="author">
-                    <h3>GitHub</h3>
-                </a>
-            </div>
-            <img src="images/github_qr.jpg" alt="GitHub">
-        </section>
-        <section>
-            <img src="images/linkedin_icon.jpg" alt="LinkedIn">
-            <div class="socialMedia">
-                <a href="https://www.linkedin.com/in/rafael-spontes/" target="_blank" rel="author">
-                    <h3>LinkedIn</h3>
-                </a>
-            </div>
-            <img src="images/linkedin_qr.jpg" alt="LinkedIn">
-        </section>
-        <section>
-            <img src="images/curriculo_icon.jpg" alt="Curriculo">
-            <div class="socialMedia">
-                <a href="documents/Curriculo_Rafael_Pontes.pdf" target="_blank" rel="author">
-                    <h3>Curriculo</h3>
-                </a>
-            </div>
-            <img src="images/curriculo_qr.jpg" alt="Curriculo">
-        </section>
-        <section>
-            <img src="images/outlook_icon.jpg" alt="Outlook">
-            <div class="socialMedia">
-                <h3>Outlook</h3>
-            </div>
-            <img src="images/qr_icon.jpg" alt="Outlook">
-        </section>
-        <section>
-            <img src="images/whatsapp_icon.jpg" alt="Whatsapp">
-            <div class="socialMedia">
-                <h3>Whatsapp</h3>
-                <p>+55 (11) 99899-9507</p>
-            </div>
-            <img src="images/qr_icon.jpg" alt="Whatsapp">
-        </section>
-        <section>
-            <img src="images/maps_icon.jpg" alt="Localização">
-            <div class="socialMedia">
-                <h3>Localização</h3>
-                <p>Suzano, SP</p>
-            </div>
-            <img src="images/qr_icon.jpg" alt="Localização">
-        </section>
-
+        <div id="contact">
+            <ul>
+                <li>
+                    <a href="https://github.com/Rafael-sPontes" rel="external" target="_blank">
+                        <img src="images/github_icon.jpg" alt="GitHub">
+                        <p>GitHub</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/rafael-spontes/" rel="external" target="_blank">
+                        <img src="images/linkedin_icon.jpg" alt="LinkedIn">
+                        <p>LinkedIn</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="documents/Curriculo_Rafael_Pontes.pdf" download="Curriculo_Rafael_Pontes">
+                        <img src="images/curriculo_icon.jpg" alt="Currículo PDF">
+                        <p>Currículo</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:rafael.spontes@hotmail.com" rel="external" target="_blank">
+                        <img src="images/outlook_icon.jpg" alt="Outlook">
+                        <p>Outlook</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/+5511998999507" rel="external" target="_blank">
+                        <img src="images/whatsapp_icon.jpg" alt="WhatsApp">
+                        <p>WhatsApp</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" rel="external" target="_blank">
+                        <img src="images/maps_icon.jpg" alt="Localização">
+                        <p>Localização</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 
-    <script src="script/script.js"></script>
+    <!-- <script src="script/script.js"></script> -->
 </body>
 
 </html>
