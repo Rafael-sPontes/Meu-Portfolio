@@ -9,260 +9,509 @@
     <title>rafael-spontes Porfolio</title>
 </head>
 
-
+<!-- ------------------------------ -->
 
 <body>
 
     <header>
         <div id="headerTitle">
-            <h2>Bem vindo!</h2>
+            <h3>Bem vindo!</h3>
             <h1>Rafael S. Pontes - Portfolio</h1>
             <h2>Desenvolvedor Mobile Android</h2>
         </div>
         <nav id="headerNav">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="#nav_apresentacao">
                         <i class="material-symbols-outlined">person</i>
-                        <p>Apresentação</p>
+                        Apresentação
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <i class="material-symbols-outlined">code</i>
-                        <p>Projetos</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
+                    <a href="#nav_aprendizado">
                         <i class="material-symbols-outlined">school</i>
-                        <p>Aprendizado</p>
+                        Aprendizado
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#nav_projetos">
+                        <i class="material-symbols-outlined">code</i>
+                        Projetos
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#nav_contato">
                         <i class="material-symbols-outlined">mail</i>
-                        <p>Contato</p>
+                        Contato
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!-- ------------------------------ -->
+
     <main>
-        <!-- Seção principal do carrossel -->
-        <!-- <section class="secao-carrossel"></section> -->
 
-        <section class="tema">
-            <h1>Aprendizado</h1>
+        <!-- section apresentacao -->
+        <section id="nav_apresentacao" class="tema">
+            <div class="navigation">
+                <h1>Apresentação</h1>
+            </div>
 
-            <section class="carousel-container">
+            <article id="profile">
 
-                <article class="card">
-                    <section class="aprendizado">
-                        <h2>Stack Mobile</h2>
-                        <hr>
-                        <!-- O Contêiner da Rolagem (Tracks) -->
-                        <div class="app">
-                            <h3>Nome do App 02</h3>
-                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
+                <!-- section#knowme card 01 -->
+                <section id="knowme" class="personal">
+
+                    <img src="images/personal/perfil.jpg" alt="Foto de Perfil">
+                    <div id="myself">
+                        <div>
+                            <h2>Rafael S. Pontes</h2>
                         </div>
-                        <div class="desc">
-                            <ul>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
-                                        alias
-                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
-                                        magni,
-                                        suscipit atque dignissimos molestias cum beatae.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
-                                        autem
-                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
-                                        maiores
-                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
-                                        repellendus
-                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
-                                        aspernatur
-                                        dicta
-                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
-                                </li>
-                            </ul>
+                        <div>
+                            <p><i class="material-symbols-outlined">cake</i>23 Setembro 1998</p>
+                            <p><i class="material-symbols-outlined">location_on</i>Suzano, São Paulo</p>
                         </div>
-                </article>
+                    </div>
 
-                <article class="card">
-                    <section class="aprendizado">
-                        <h2>Stack Mobile</h2>
-                        <hr>
-                        <!-- O Contêiner da Rolagem (Tracks) -->
-                        <div class="app">
-                            <h3>Nome do App 02</h3>
-                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
-                        </div>
-                        <div class="desc">
-                            <ul>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
-                                        alias
-                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
-                                        magni,
-                                        suscipit atque dignissimos molestias cum beatae.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
-                                        autem
-                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
-                                        maiores
-                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
-                                        repellendus
-                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
-                                        aspernatur
-                                        dicta
-                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
-                                </li>
-                            </ul>
-                        </div>
-                </article>
+                </section>
 
-                <!-- Contêiner de dots deste carrossel -->
-                <!-- <div class="carousel-dots"></div> -->
-            </section>
+                <!-- section#biography card 02 -->
+                <section id="biography" class="personal">
+
+                    <h2>Formação Acadêmica</h2>
+                    <div id="grade">
+                        <div>
+                            <h3>Graduação<br>Sistema de Informação</h3>
+                            <p>UMC - Universidade de Mogi das Cruzes</p>
+                        </div>
+                        <div>
+                            <h3>Pós Graduação<br>Desenvolvimento de Aplicativos Móveis</h3>
+                            <p>PUCPR - Universidade Católica do Paraná</p>
+                        </div>
+                    </div>
+
+
+                    <h2>Desenvolvedor Mobile Android</h2>
+                    <div id="hero">
+                        <p>
+                            Desenvolvedor focado na criação de aplicativos Android, combinando <strong>Kotlin</strong> e
+                            <strong>Java</strong> para entregar soluções com alta performance e excelente usabilidade.
+                        </p>
+                        <p>
+                            Tenho dedicação à construção de interfaces limpas seguindo as diretrizes do <strong>Material
+                                Design</strong> e à aplicação de boas práticas, garantindo um código escalável e de
+                            fácil
+                            manutenção.
+                        </p>
+                    </div>
+
+                </section>
+
+                <section id="hardskills" class="personal">
+
+                    <div>
+                        <h2>Tecnologias</h2>
+                        <ul id="technologies">
+                            <li>
+                                <img src="images/technologies/git_transparent.png" alt="Git">
+                                <h3>Git</h3>
+                            </li>
+                            <li>
+                                <img src="images/technologies/github_transparent.png" alt="GitHub">
+                                <h3>GitHub</h3>
+                            </li>
+                            <li>
+                                <img src="images/technologies/vs_code_transparent.png" alt="VS Code">
+                                <h3>VS Code</h3>
+                            </li>
+                            <li>
+                                <img src="images/technologies/android_studio_transparent.png" alt="Android Studio">
+                                <h3>Android<br>Studio</h3>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Linguagens</h2>
+                        <ul id="languages">
+                            <li>
+                                <img src="images/languages/html5_transparent.png" alt="HTML5">
+                                <h3>HTML5</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/css3_transparent.png" alt="CSS3">
+                                <h3>CSS3</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/javascript_transparent.png" alt="JavaScript">
+                                <h3>Java<br>Script</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/java_transparent.png" alt="Java">
+                                <h3>Java</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/kotlin_transparent.png" alt="Kotlin">
+                                <h3>Kotlin</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/dart_transparent.png" alt="Dart">
+                                <h3>Dart</h3>
+                            </li>
+                            <li>
+                                <img src="images/languages/micropython_transparent.png" alt="MicroPython">
+                                <h3>MicroPython</h3>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h2>Frameworks</h2>
+                        <ul id="frameworks">
+                            <li>
+                                <img src="images/frameworks/android_sdk_transparent.png" alt="Android SDK">
+                                <h3>Android<br>SDK XML</h3>
+                            </li>
+                            <li>
+                                <img src="images/frameworks/flutter_transparent.png" alt="Flutter">
+                                <h3>Flutter</h3>
+                            </li>
+                            <li>
+                                <img src="images/frameworks/" alt="">
+                                <h3></h3>
+                            </li>
+                        </ul>
+                    </div>
+
+                </section>
+
+            </article>
+
         </section>
+        <!-- / section apresentacao -->
 
         <!-- ------------------------------ -->
+        <div class="bat"></div>
+        <!-- ------------------------------ -->
 
-        <section class="tema">
-            <h1>Projetos</h1>
+        <!-- section aprendizado -->
+        <section id="nav_aprendizado" class="tema">
+            <div class="navigation">
+                <button class="nav-btn prev-btn" aria-label="Anterior">&lt;</button>
+                <h1>Aprendizado</h1>
+                <button class="nav-btn next-btn" aria-label="Próximo">&gt;</button>
+            </div>
 
+            <!-- section aprendizado - carrossel -->
             <section class="carousel-container">
 
+                <!-- aprendizado card 01 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
                         <hr>
-                        <!-- O Contêiner da Rolagem (Tracks) -->
-                        <div class="app">
-                            <h3>Nome do App 02</h3>
-                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Calculadora de Notas</h3>
+                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.png" controls
+                                    loop muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Calculadora de Notas</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta calcular a média entre 4 notas de um aluno e
+                                            exibir o resultado final acompanhado do total de faltas. Com base na média
+                                            mínima 5.0 e no limite de 20 faltas, o sistema classifica a situação do
+                                            aluno em Aprovado ou Reprovado.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: a interface foi desenvolvida em "RelativeLayout" com campos
+                                            "EditText", "Button" e "TextView". Para garantir a centralização adequada em
+                                            telas de diferentes dimensões, os campos de entrada foram agrupados em uma
+                                            "View" contêiner. O código recupera as referências via "findViewById" e
+                                            realiza o cálculo iterando sobre um array de valores.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: este foi o primeiro projeto prático desenvolvido do zero com o
+                                            intuito de consolidar a criação de layouts XML, o uso do findViewById e a
+                                            manipulação direta de componentes de texto e entrada.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <ul>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
-                                        alias
-                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
-                                        magni,
-                                        suscipit atque dignissimos molestias cum beatae.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
-                                        autem
-                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
-                                        maiores
-                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
-                                        repellendus
-                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
-                                        aspernatur
-                                        dicta
-                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
-                                </li>
-                            </ul>
-                        </div>
+                    </section>
                 </article>
 
-                <!-- ------------ -->
-
+                <!-- aprendizado card 02 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
                         <hr>
-                        <!-- O Contêiner da Rolagem (Tracks) -->
-                        <div class="app">
-                            <h3>Nome do App 02</h3>
-                            <video src="videos/576_1280.webm" autoplay loop muted playsinline></video>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Bloco de Notas</h3>
+                                <video src="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.png" controls loop
+                                    muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Bloco de Notas</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app busca fornecer um bloco de anotações simples e direto,
+                                            permitindo que o usuário digite textos em múltiplas linhas, salve as
+                                            informações e edite o conteúdo sempre que necessário.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: construído sobre "ConstraintLayout", o aplicativo utiliza um
+                                            "EditText" multilinha para inserção de texto e um "FloatingActionButton"
+                                            para acionar o salvamento. A persistência dos dados é feita através de
+                                            "SharedPreferences", gravando o texto no formato chave-valor para que as
+                                            anotações permaneçam salvas mesmo após fechar o app.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: além da construção de interface com "ConstraintLayout" e
+                                            "FloatingActionButton", o foco do projeto foi introduzir a
+                                            persistência de dados simples com "SharedPreferences" na prática.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="desc">
-                            <ul>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eos nihil eius
-                                        alias
-                                        ipsum reiciendis dolorum ratione. Fugit, vel sint quos, perspiciatis nostrum
-                                        magni,
-                                        suscipit atque dignissimos molestias cum beatae.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero vitae, repellendus
-                                        autem
-                                        quaerat reprehenderit sint. Explicabo earum similique molestias reprehenderit
-                                        maiores
-                                        distinctio temporibus, quos, reiciendis dicta minima voluptas hic animi.</p>
-                                </li>
-                                <li>
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, adipisci
-                                        repellendus
-                                        corrupti atque sint, itaque voluptates veritatis illo ut sed sapiente,
-                                        aspernatur
-                                        dicta
-                                        eos enim assumenda dolor doloribus. Possimus, eligendi!</p>
-                                </li>
-                            </ul>
+                    </section>
+                </article>
+
+                <!-- aprendizado card 03 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Gerador de Senha</h3>
+                                <video src="videos/aprendizado/aprendizado_appGeradorDeSenha_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appGeradorDeSenha_480p_50.png" controls loop
+                                    muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Gerador de Senha</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta gerar uma combinação aleatória composta por
+                                            duas letras e quatro números ao clicar em um botão, exibindo o resultado
+                                            diretamente na tela.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: o app é baseado em "LinearLayout" de orientação vertical e
+                                            formado por dois elementos "TextView" (um para o título e outro para a
+                                            exibição da senha) e um "Button". O acesso aos componentes do layout é
+                                            realizado via "ViewBinding", e a lógica de geração utiliza um array de
+                                            strings contendo o alfabeto combinado com funções da biblioteca de "Random"
+                                            do Kotlin.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: o objetivo deste projeto é aplicar o "ViewBinding" para vinculação
+                                            de views no Kotlin, além de praticar a manipulação de arrays e o uso da
+                                            biblioteca "kotlin.random.Random" para a geração de valores aleatórios em
+                                            tempo de execução.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+                    </section>
+                </article>
+
+                <!-- aprendizado card 04 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Preferências do Usuário</h3>
+                                <video src="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.png"
+                                    controls loop muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Preferências do Usuário</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta permitir que o usuário escolha uma cor para
+                                            personalizar o fundo do aplicativo, salvando essa preferência para ser
+                                            mantida nas próximas execuções.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: a interface combina "LinearLayout" (vertical e horizontal) em um
+                                            "HorizontalScrollView". Utiliza "ViewBinding", tratamento de cores via
+                                            "Color.parseColor", avisos com "Snackbar" e salvamento/recuperação de dados
+                                            no "SharedPreferences" dentro do "onResume".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: demonstrar a aplicação prática de "SharedPreferences" para guardar
+                                            configurações do usuário e praticar a restauração de estados no ciclo de
+                                            vida (onResume).
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- aprendizado card 05 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Calculadora de IMC</h3>
+                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.png" controls
+                                    loop muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Calculadora de IMC</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta calcular o Índice de Massa Corporal a partir
+                                            do peso e da altura informados, exibindo a classificação do resultado e um
+                                            botão no menu superior para resetar os campos.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: construído em "LinearLayout" e desenvolvido em Java, a interface
+                                            adota componentes Material3 como "TextInputLayout" e "TextInputEditText".
+                                            Utiliza "ViewBinding", validação de campos vazios, menu de opções via
+                                            "onCreateOptionsMenu" e estruturas condicionais para calcular e classificar
+                                            o IMC.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: o foco do projeto é evoluir o visual de formulários aplicando
+                                            componentes Material Design e trabalhar com menus de ação no Toolbar (Menu
+                                            XML), além de praticar cálculos com validações de entrada em Java.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- aprendizado card 06 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Play Music</h3>
+                                <video src="videos/aprendizado/aprendizado_appPlayMusic_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appPlayMusic_480p_50.png" controls loop
+                                    playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Play Music</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta executar arquivos de áudio em um reproductor
+                                            simples de mídia com três botões interativos (Pause, Play e Stop),
+                                            controlando a reprodução conforme as ações do usuário e os eventos do
+                                            sistema.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: desenvolvido em Java com layout em "LinearLayout" horizontal
+                                            contendo elementos "ImageView". O projeto faz uso do "MediaPlayer" para
+                                            reprodução de áudio armazenado na pasta res/raw e recursos visuais em
+                                            res/drawable, além de gerenciar o fluxo de áudio nos métodos do ciclo de
+                                            vida "onResume", "onStop" e "onDestroy".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: demonstrar na prática o ciclo de vida de uma Activity (trata ações
+                                            ao minimizar, maximizar e fechar o app) e o uso da classe "MediaPlayer",
+                                            ensinando a organização adequada de arquivos de mídia (imagens e áudio) na
+                                            estrutura do projeto Android.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
                 </article>
 
                 <!-- Contêiner de dots deste carrossel -->
                 <!-- <div class="carousel-dots"></div> -->
             </section>
+            <!-- / section aprendizado - carrossel -->
         </section>
+        <!-- / section aprendizado -->
 
     </main>
 
-    <footer>
+    <!-- ------------------------------ -->
+
+    <footer id="nav_contato">
+        <h1>Contato</h1>
         <div id="contact">
             <ul>
                 <li>
                     <a href="https://github.com/Rafael-sPontes" rel="external" target="_blank">
-                        <img src="images/github_icon.jpg" alt="GitHub">
+                        <img src="images/contacts/github_icon.jpg" alt="GitHub">
                         <p>GitHub</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://www.linkedin.com/in/rafael-spontes/" rel="external" target="_blank">
-                        <img src="images/linkedin_icon.jpg" alt="LinkedIn">
+                        <img src="images/contacts/linkedin_icon.jpg" alt="LinkedIn">
                         <p>LinkedIn</p>
                     </a>
                 </li>
                 <li>
-                    <a href="documents/Curriculo_Rafael_Pontes.pdf" download="Curriculo_Rafael_Pontes">
-                        <img src="images/curriculo_icon.jpg" alt="Currículo PDF">
+                    <a href="documents/curriculo_rafaelspontes_mobile.pdf" download="Curriculo_Rafael_Pontes">
+                        <img src="images/contacts/curriculo_icon.jpg" alt="Currículo PDF">
                         <p>Currículo</p>
                     </a>
                 </li>
                 <li>
                     <a href="mailto:rafael.spontes@hotmail.com" rel="external" target="_blank">
-                        <img src="images/outlook_icon.jpg" alt="Outlook">
+                        <img src="images/contacts/outlook_icon.jpg" alt="Outlook">
                         <p>Outlook</p>
                     </a>
                 </li>
                 <li>
                     <a href="https://wa.me/+5511998999507" rel="external" target="_blank">
-                        <img src="images/whatsapp_icon.jpg" alt="WhatsApp">
+                        <img src="images/contacts/whatsapp_icon.jpg" alt="WhatsApp">
                         <p>WhatsApp</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#" rel="external" target="_blank">
-                        <img src="images/maps_icon.jpg" alt="Localização">
+                    <a href="https://maps.app.goo.gl/KMbZ5avrKujsDHpu7" rel="external" target="_blank">
+                        <img src="images/contacts/maps_icon.jpg" alt="Localização">
                         <p>Localização</p>
                     </a>
                 </li>
@@ -270,7 +519,7 @@
         </div>
     </footer>
 
-    <!-- <script src="script/script.js"></script> -->
+    <script src="script/script.js"></script>
 </body>
 
 </html>
