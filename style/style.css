@@ -101,18 +101,23 @@ header {
     color: var(--darkColor4);
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 30px;
     background-color: var(--darkColor1);
 }
 
 #headerTitle>h1 {
     font-size: 2rem;
+    text-indent: 30px;
 }
 
-#headerTitle>h2,
-#headerTitle>h3 {
+#headerTitle>h2 {
     font-size: 1.5rem;
+    text-indent: 10px;
+}
+
+#headerTitle>h3 {
+    display: none;
 }
 
 /* Nav - menu de navegacao */
@@ -211,14 +216,15 @@ main {
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    text-align: center;
     padding: 50px 0px;
 }
 
 #knowme>img {
     border: 3px solid #000;
     border-radius: 30px;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 #myself {
@@ -235,7 +241,7 @@ main {
 }
 
 #myself h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #myself p {
@@ -247,7 +253,7 @@ main {
 
 #myself p,
 #myself i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* section#biography card 02 */
@@ -255,16 +261,21 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    height: fit-content;
     text-align: center;
     padding: 50px;
 }
 
 #biography h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 #biography p {
     font-size: 1.2rem;
+}
+
+#biography hr {
+    border: 1px solid #000;
 }
 
 #grade,
@@ -285,6 +296,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    height: fit-content;
     padding: 50px 0px;
 }
 
@@ -317,14 +329,14 @@ main {
 #technologies img,
 #languages img,
 #frameworks img {
-    width: 100px;
+    width: 80px;
 }
 
 #technologies h3,
 #languages h3,
 #frameworks h3 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /* ------------------------------------ */
@@ -348,7 +360,8 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    height: 1500px;
+
+    height: 1800px;
 }
 
 /* section .aprendizado .projetos divisions */
@@ -357,19 +370,22 @@ main {
 .app {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .app>h3 {
     font-size: 2rem;
     padding: 20px 0px;
+
+    height: 100px;
+    text-align: center;
+    align-content: center;
 }
 
 .app>video {
     height: 600px;
     border-radius: 10px;
     border: 5px solid black;
-    margin: 20px 0px;
+    margin: 20px auto;
 }
 
 /* card part.2 - desc */
@@ -434,8 +450,8 @@ footer>h1 {
     flex-direction: row;
     text-decoration: none;
     align-items: center;
-    font-size: 2rem;
-    padding: 0px 50px;
+    font-size: 1.5rem;
+    padding: 0px 20px;
     border-radius: 50px;
 }
 
@@ -489,21 +505,17 @@ footer>h1 {
     }
 
     #headerTitle>h1 {
-        font-size: 3rem;
-        text-indent: 100px;
-    }
-
-    #headerTitle>h2,
-    #headerTitle>h3 {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
     #headerTitle>h2 {
-        text-indent: 160px;
+        display: none;
     }
 
     #headerTitle>h3 {
-        text-indent: 20px;
+        display: block;
+        font-size: 3rem;
+        text-indent: 100px;
     }
 
     /* Nav - menu de navegacao */
