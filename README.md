@@ -4,7 +4,7 @@
 
 Bem-vindo ao repositório oficial do meu site portfólio pessoal! Este projeto foi desenvolvido com o objetivo de centralizar minha trajetória acadêmica, habilidades técnicas, aprendizados práticos e futuros projetos em um só lugar, de forma limpa, interativa e de fácil acesso.
 
-🔗 **Acesse o portfólio online:** [Insira aqui o link do seu GitHub Pages ou URL pública, se houver]
+🔗 **Acesse o portfólio online:** https://rafael-spontes.github.io/Meu-Portfolio/
 
 ---
 
