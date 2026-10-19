@@ -4,7 +4,9 @@
 
 Bem-vindo ao repositório oficial do meu site portfólio pessoal! Este projeto foi desenvolvido com o objetivo de centralizar minha trajetória acadêmica, habilidades técnicas, aprendizados práticos e futuros projetos em um só lugar, de forma limpa, interativa e de fácil acesso.
 
-🔗 **Acesse o portfólio online:** https://rafael-spontes.github.io/Meu-Portfolio/
+<p>🔗 <strong>Acesse o portfólio online: </strong>
+  <a href="https://rafael-spontes.github.io/Meu-Portfolio/" target="_blank" rel="author">Meu Portfólio</a>
+</p>
 
 ---
 
@@ -33,9 +35,17 @@ O portfólio está dividido em seções dinâmicas para facilitar a visualizaç�
 
 Fique à vontade para entrar em contato comigo para oportunidades na área de desenvolvimento mobile ou troca de experiências:
 
-* **LinkedIn:** [Rafael S. Pontes](https://www.linkedin.com/in/rafael-spontes/)
-* **E-mail:** rafael.spontes@hotmail.com
-* **WhatsApp:** [Enviar mensagem](https://wa.me/+5511998999507)
+<ul>
+  <li><strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/rafael-spontes/" target="_blank" rel="external">in/rafael-spontes</a>
+  </li>
+  <li><strong>E-mail:</strong>
+      <a href="mailto:rafael.spontes@hotmail.com" target="_blank" rel="external">rafael.spontes@hotmail.com</a>
+  </li>
+  <li><strong>WhatsApp:</strong>
+      <a href="https://wa.me/+5511998999507" target="_blank" rel="external">+55(11)99899-9507</a>
+  </li>
+</ul>
 
 ---
 ⌨️ Desenvolvido por **Rafael S. Pontes**.
