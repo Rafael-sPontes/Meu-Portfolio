@@ -14,12 +14,14 @@
 <body>
 
     <header>
-        <div id="headerTitle">
+
+        <div id="header_title">
             <h1>Bem vindo!</h1>
             <!-- <h1>Rafael S. Pontes</h1> -->
             <h2>Portfólio<br>Desenvolvedor Mobile</h2>
             <h3>Portfólio Desenvolvedor Mobile</h3>
         </div>
+
         <nav id="headerNav">
             <ul>
                 <li>
@@ -49,11 +51,16 @@
                 </li>
             </ul>
         </nav>
+
     </header>
 
     <!-- ------------------------------ -->
 
     <main>
+
+        <!-- ------------------------------ -->
+        <div class="bat"></div>
+        <!-- ------------------------------ -->
 
         <!-- section apresentacao -->
         <section id="nav_apresentacao" class="tema">
@@ -67,6 +74,7 @@
                 <section id="knowme" class="personal">
 
                     <img src="images/personal/perfil.jpg" alt="Foto de Perfil">
+
                     <div id="myself">
                         <div>
                             <h2>Rafael S. Pontes</h2>
@@ -83,6 +91,7 @@
                 <section id="biography" class="personal">
 
                     <h2>Formação Acadêmica</h2>
+
                     <div id="grade">
                         <div>
                             <h3>Graduação<br>Sistema de Informação</h3>
@@ -98,6 +107,7 @@
 
 
                     <h2>Desenvolvedor Mobile Android</h2>
+
                     <div id="hero">
                         <p>
                             Desenvolvedor focado na criação de aplicativos Android, combinando <strong>Kotlin</strong> e
@@ -113,11 +123,12 @@
 
                 </section>
 
+                <!-- section#hardskills card 03 -->
                 <section id="hardskills" class="personal">
 
-                    <div>
+                    <div id="technologies">
                         <h2>Tecnologias</h2>
-                        <ul id="technologies">
+                        <ul class="tech_skills">
                             <li>
                                 <img src="images/technologies/git_transparent.png" alt="Git">
                                 <h3>Git</h3>
@@ -137,9 +148,9 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div id="languages">
                         <h2>Linguagens</h2>
-                        <ul id="languages">
+                        <ul class="tech_skills">
                             <li>
                                 <img src="images/languages/html5_transparent.png" alt="HTML5">
                                 <h3>HTML5</h3>
@@ -171,9 +182,9 @@
                         </ul>
                     </div>
 
-                    <div>
+                    <div id="frameworks">
                         <h2>Frameworks</h2>
-                        <ul id="frameworks">
+                        <ul class="tech_skills">
                             <li>
                                 <img src="images/frameworks/android_sdk_transparent.png" alt="Android SDK">
                                 <h3>Android<br>SDK XML</h3>
@@ -183,8 +194,8 @@
                                 <h3>Flutter</h3>
                             </li>
                             <li>
-                                <img src="images/frameworks/" alt="">
-                                <h3></h3>
+                                <img src="images/frameworks/jetpack_compose_transparent.png" alt="Jetpack Compose">
+                                <h3>Jetpack<br>Compose</h3>
                             </li>
                         </ul>
                     </div>
@@ -211,7 +222,7 @@
             <!-- section aprendizado - carrossel -->
             <section class="carousel-container">
 
-                <!-- aprendizado card 01 -->
+                <!-- aprendizado card 06 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
@@ -219,33 +230,34 @@
                         <div class="conteudo">
                             <!-- O Contêiner da Rolagem (Tracks) -->
                             <div class="app">
-                                <h3>Calculadora de Notas</h3>
-                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.webm"
-                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.png" controls
-                                    loop muted playsinline></video>
+                                <h3>Play Music</h3>
+                                <video src="videos/aprendizado/aprendizado_appPlayMusic_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appPlayMusic_480p_50.png" controls loop
+                                    playsinline></video>
                             </div>
                             <div class="desc">
-                                <h3>Calculadora de Notas</h3>
+                                <h3>Play Music</h3>
                                 <ul>
                                     <li>
-                                        <p>O que é: o app tem como proposta calcular a média entre 4 notas de um aluno e
-                                            exibir o resultado final acompanhado do total de faltas. Com base na média
-                                            mínima 5.0 e no limite de 20 faltas, o sistema classifica a situação do
-                                            aluno em Aprovado ou Reprovado.
+                                        <p>O que é: o app tem como proposta executar arquivos de áudio em um reproductor
+                                            simples de mídia com três botões interativos (Pause, Play e Stop),
+                                            controlando a reprodução conforme as ações do usuário e os eventos do
+                                            sistema.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Construção: a interface foi desenvolvida em "RelativeLayout" com campos
-                                            "EditText", "Button" e "TextView". Para garantir a centralização adequada em
-                                            telas de diferentes dimensões, os campos de entrada foram agrupados em uma
-                                            "View" contêiner. O código recupera as referências via "findViewById" e
-                                            realiza o cálculo iterando sobre um array de valores.
+                                        <p>Construção: desenvolvido em Java com layout em "LinearLayout" horizontal
+                                            contendo elementos "ImageView". O projeto faz uso do "MediaPlayer" para
+                                            reprodução de áudio armazenado na pasta res/raw e recursos visuais em
+                                            res/drawable, além de gerenciar o fluxo de áudio nos métodos do ciclo de
+                                            vida "onResume", "onStop" e "onDestroy".
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Objetivo: este foi o primeiro projeto prático desenvolvido do zero com o
-                                            intuito de consolidar a criação de layouts XML, o uso do findViewById e a
-                                            manipulação direta de componentes de texto e entrada.
+                                        <p>Objetivo: demonstrar na prática o ciclo de vida de uma Activity (trata ações
+                                            ao minimizar, maximizar e fechar o app) e o uso da classe "MediaPlayer",
+                                            ensinando a organização adequada de arquivos de mídia (imagens e áudio) na
+                                            estrutura do projeto Android.
                                         </p>
                                     </li>
                                 </ul>
@@ -254,7 +266,7 @@
                     </section>
                 </article>
 
-                <!-- aprendizado card 02 -->
+                <!-- aprendizado card 05 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
@@ -262,32 +274,73 @@
                         <div class="conteudo">
                             <!-- O Contêiner da Rolagem (Tracks) -->
                             <div class="app">
-                                <h3>Bloco de Notas</h3>
-                                <video src="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.webm"
-                                    poster="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.png" controls loop
-                                    muted playsinline></video>
+                                <h3>Calculadora de IMC</h3>
+                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.png" controls
+                                    loop muted playsinline></video>
                             </div>
                             <div class="desc">
-                                <h3>Bloco de Notas</h3>
+                                <h3>Calculadora de IMC</h3>
                                 <ul>
                                     <li>
-                                        <p>O que é: o app busca fornecer um bloco de anotações simples e direto,
-                                            permitindo que o usuário digite textos em múltiplas linhas, salve as
-                                            informações e edite o conteúdo sempre que necessário.
+                                        <p>O que é: o app tem como proposta calcular o Índice de Massa Corporal a partir
+                                            do peso e da altura informados, exibindo a classificação do resultado e um
+                                            botão no menu superior para resetar os campos.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Construção: construído sobre "ConstraintLayout", o aplicativo utiliza um
-                                            "EditText" multilinha para inserção de texto e um "FloatingActionButton"
-                                            para acionar o salvamento. A persistência dos dados é feita através de
-                                            "SharedPreferences", gravando o texto no formato chave-valor para que as
-                                            anotações permaneçam salvas mesmo após fechar o app.
+                                        <p>Construção: construído em "LinearLayout" e desenvolvido em Java, a interface
+                                            adota componentes Material3 como "TextInputLayout" e "TextInputEditText".
+                                            Utiliza "ViewBinding", validação de campos vazios, menu de opções via
+                                            "onCreateOptionsMenu" e estruturas condicionais para calcular e classificar
+                                            o IMC.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Objetivo: além da construção de interface com "ConstraintLayout" e
-                                            "FloatingActionButton", o foco do projeto foi introduzir a
-                                            persistência de dados simples com "SharedPreferences" na prática.
+                                        <p>Objetivo: o foco do projeto é evoluir o visual de formulários aplicando
+                                            componentes Material Design e trabalhar com menus de ação no Toolbar (Menu
+                                            XML), além de praticar cálculos com validações de entrada em Java.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- aprendizado card 04 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Preferências do Usuário</h3>
+                                <video src="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.png"
+                                    controls loop muted playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Preferências do Usuário</h3>
+                                <ul>
+                                    <li>
+                                        <p>O que é: o app tem como proposta permitir que o usuário escolha uma cor para
+                                            personalizar o fundo do aplicativo, salvando essa preferência para ser
+                                            mantida nas próximas execuções.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Construção: a interface combina "LinearLayout" (vertical e horizontal) em um
+                                            "HorizontalScrollView". Utiliza "ViewBinding", tratamento de cores via
+                                            "Color.parseColor", avisos com "Snackbar" e salvamento/recuperação de dados
+                                            no "SharedPreferences" dentro do "onResume".
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Objetivo: demonstrar a aplicação prática de "SharedPreferences" para guardar
+                                            configurações do usuário e praticar a restauração de estados no ciclo de
+                                            vida (onResume).
                                         </p>
                                     </li>
                                 </ul>
@@ -340,7 +393,7 @@
                     </section>
                 </article>
 
-                <!-- aprendizado card 04 -->
+                <!-- aprendizado card 02 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
@@ -348,31 +401,32 @@
                         <div class="conteudo">
                             <!-- O Contêiner da Rolagem (Tracks) -->
                             <div class="app">
-                                <h3>Preferências do Usuário</h3>
-                                <video src="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.webm"
-                                    poster="videos/aprendizado/aprendizado_appPreferenciasDoUsuario_480p_50.png"
-                                    controls loop muted playsinline></video>
+                                <h3>Bloco de Notas</h3>
+                                <video src="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appBlocoDeNotas_480p_50.png" controls loop
+                                    muted playsinline></video>
                             </div>
                             <div class="desc">
-                                <h3>Preferências do Usuário</h3>
+                                <h3>Bloco de Notas</h3>
                                 <ul>
                                     <li>
-                                        <p>O que é: o app tem como proposta permitir que o usuário escolha uma cor para
-                                            personalizar o fundo do aplicativo, salvando essa preferência para ser
-                                            mantida nas próximas execuções.
+                                        <p>O que é: o app busca fornecer um bloco de anotações simples e direto,
+                                            permitindo que o usuário digite textos em múltiplas linhas, salve as
+                                            informações e edite o conteúdo sempre que necessário.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Construção: a interface combina "LinearLayout" (vertical e horizontal) em um
-                                            "HorizontalScrollView". Utiliza "ViewBinding", tratamento de cores via
-                                            "Color.parseColor", avisos com "Snackbar" e salvamento/recuperação de dados
-                                            no "SharedPreferences" dentro do "onResume".
+                                        <p>Construção: construído sobre "ConstraintLayout", o aplicativo utiliza um
+                                            "EditText" multilinha para inserção de texto e um "FloatingActionButton"
+                                            para acionar o salvamento. A persistência dos dados é feita através de
+                                            "SharedPreferences", gravando o texto no formato chave-valor para que as
+                                            anotações permaneçam salvas mesmo após fechar o app.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Objetivo: demonstrar a aplicação prática de "SharedPreferences" para guardar
-                                            configurações do usuário e praticar a restauração de estados no ciclo de
-                                            vida (onResume).
+                                        <p>Objetivo: além da construção de interface com "ConstraintLayout" e
+                                            "FloatingActionButton", o foco do projeto foi introduzir a
+                                            persistência de dados simples com "SharedPreferences" na prática.
                                         </p>
                                     </li>
                                 </ul>
@@ -381,89 +435,48 @@
                     </section>
                 </article>
 
-                <!-- aprendizado card 05 -->
+                <!-- aprendizado card 01 -->
                 <article class="card">
                     <section class="aprendizado">
                         <h2>Stack Mobile</h2>
                         <hr>
+
                         <div class="conteudo">
                             <!-- O Contêiner da Rolagem (Tracks) -->
                             <div class="app">
-                                <h3>Calculadora de IMC</h3>
-                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.webm"
-                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeIMC_480p_50.png" controls
+                                <h3>Calculadora de Notas</h3>
+                                <video src="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.webm"
+                                    poster="videos/aprendizado/aprendizado_appCalculadoraDeNotas_480p_50.png" controls
                                     loop muted playsinline></video>
                             </div>
                             <div class="desc">
-                                <h3>Calculadora de IMC</h3>
+                                <h3>Calculadora de Notas</h3>
                                 <ul>
                                     <li>
-                                        <p>O que é: o app tem como proposta calcular o Índice de Massa Corporal a partir
-                                            do peso e da altura informados, exibindo a classificação do resultado e um
-                                            botão no menu superior para resetar os campos.
+                                        <p>O que é: o app tem como proposta calcular a média entre 4 notas de um aluno e
+                                            exibir o resultado final acompanhado do total de faltas. Com base na média
+                                            mínima 5.0 e no limite de 20 faltas, o sistema classifica a situação do
+                                            aluno em Aprovado ou Reprovado.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Construção: construído em "LinearLayout" e desenvolvido em Java, a interface
-                                            adota componentes Material3 como "TextInputLayout" e "TextInputEditText".
-                                            Utiliza "ViewBinding", validação de campos vazios, menu de opções via
-                                            "onCreateOptionsMenu" e estruturas condicionais para calcular e classificar
-                                            o IMC.
+                                        <p>Construção: a interface foi desenvolvida em "RelativeLayout" com campos
+                                            "EditText", "Button" e "TextView". Para garantir a centralização adequada em
+                                            telas de diferentes dimensões, os campos de entrada foram agrupados em uma
+                                            "View" contêiner. O código recupera as referências via "findViewById" e
+                                            realiza o cálculo iterando sobre um array de valores.
                                         </p>
                                     </li>
                                     <li>
-                                        <p>Objetivo: o foco do projeto é evoluir o visual de formulários aplicando
-                                            componentes Material Design e trabalhar com menus de ação no Toolbar (Menu
-                                            XML), além de praticar cálculos com validações de entrada em Java.
+                                        <p>Objetivo: este foi o primeiro projeto prático desenvolvido do zero com o
+                                            intuito de consolidar a criação de layouts XML, o uso do findViewById e a
+                                            manipulação direta de componentes de texto e entrada.
                                         </p>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                    </section>
-                </article>
 
-                <!-- aprendizado card 06 -->
-                <article class="card">
-                    <section class="aprendizado">
-                        <h2>Stack Mobile</h2>
-                        <hr>
-                        <div class="conteudo">
-                            <!-- O Contêiner da Rolagem (Tracks) -->
-                            <div class="app">
-                                <h3>Play Music</h3>
-                                <video src="videos/aprendizado/aprendizado_appPlayMusic_480p_50.webm"
-                                    poster="videos/aprendizado/aprendizado_appPlayMusic_480p_50.png" controls loop
-                                    playsinline></video>
-                            </div>
-                            <div class="desc">
-                                <h3>Play Music</h3>
-                                <ul>
-                                    <li>
-                                        <p>O que é: o app tem como proposta executar arquivos de áudio em um reproductor
-                                            simples de mídia com três botões interativos (Pause, Play e Stop),
-                                            controlando a reprodução conforme as ações do usuário e os eventos do
-                                            sistema.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>Construção: desenvolvido em Java com layout em "LinearLayout" horizontal
-                                            contendo elementos "ImageView". O projeto faz uso do "MediaPlayer" para
-                                            reprodução de áudio armazenado na pasta res/raw e recursos visuais em
-                                            res/drawable, além de gerenciar o fluxo de áudio nos métodos do ciclo de
-                                            vida "onResume", "onStop" e "onDestroy".
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>Objetivo: demonstrar na prática o ciclo de vida de uma Activity (trata ações
-                                            ao minimizar, maximizar e fechar o app) e o uso da classe "MediaPlayer",
-                                            ensinando a organização adequada de arquivos de mídia (imagens e áudio) na
-                                            estrutura do projeto Android.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
                     </section>
                 </article>
 

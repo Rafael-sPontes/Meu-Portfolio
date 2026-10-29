@@ -85,47 +85,64 @@ html {
     scroll-behavior: smooth;
 }
 
+html,
+body,
+header,
+main,
+footer {
+    width: 100%;
+}
+
+header,
+main,
+footer {
+    padding: 0px 10px;
+}
+
+/* ------------------------------------ */
 /* ------------------------------------ */
 
-/* header - completo */
+/* header - pricipal */
 header {
-    background-color: var(--darkColor1);
     width: 100%;
+    background-color: var(--darkColor1);
     padding: 20px 10px;
 }
 
 /* ------------------------------------ */
 
 /* header - titles */
-#headerTitle {
-    color: var(--darkColor4);
+#header_title {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
-    background-color: var(--darkColor1);
+    color: var(--darkColor4);
+    padding: 20px;
 }
 
-#headerTitle>h1 {
+#header_title>h1 {
     font-size: 2rem;
-    text-indent: 30px;
+    text-indent: 50px;
 }
 
-#headerTitle>h2 {
+#header_title>h2 {
     font-size: 1.5rem;
-    text-indent: 10px;
+    text-indent: 20px;
 }
 
-#headerTitle>h3 {
+#header_title>h3 {
     display: none;
 }
 
-/* Nav - menu de navegacao */
+/* nav - menu de navegacao */
 #headerNav {
+    width: 100%;
     padding: 10px 0px;
 }
 
 #headerNav ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -150,6 +167,7 @@ header {
     font-size: 1.5rem;
     padding: 10px 0px;
     border-radius: 50px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #headerNav i {
@@ -157,8 +175,9 @@ header {
 }
 
 /* ------------------------------------ */
+/* ------------------------------------ */
 
-/* main - completo */
+/* main - principal */
 main {
     background-color: var(--darkColor2);
 }
@@ -174,7 +193,8 @@ main {
 
 /* navigation - botoes de navegaçao */
 .navigation {
-    padding: 30px 0px;
+    width: 100%;
+    margin: 30px 0px;
 }
 
 .navigation h1 {
@@ -182,9 +202,10 @@ main {
     border-radius: 50px;
     padding: 20px 0px;
     font-size: 2.5rem;
-    margin: 0px 20px;
-    color: var(--darkColor4);
+    margin: 0px 10px;
     background-color: var(--darkColor1);
+    color: var(--darkColor4);
+    box-shadow: 0px 0px 5px black;
 }
 
 .navigation button {
@@ -193,31 +214,31 @@ main {
 
 /* ------------------------------------ */
 
-/* article#profile cards */
+/* #profile cards */
 #profile {
-    margin: 0px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 10px;
 }
 
-/* section.personal cards */
+/* .personal cards */
 .personal {
-    background-color: var(--darkColor4);
-    margin: 20px 0px;
-    border-radius: 30px;
-    padding: 50px;
-}
-
-.personal li {
-    list-style-type: none;
-}
-
-/* section#knowme card 01 */
-#knowme {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--darkColor4);
+    padding: 30px 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px black;
+}
+
+/* #knowme card 01 */
+#knowme {
     align-items: center;
     text-align: center;
-    padding: 50px 0px;
 }
 
 #knowme>img {
@@ -225,13 +246,13 @@ main {
     border-radius: 30px;
     width: 200px;
     height: 200px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #myself {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
 }
 
 #myself div {
@@ -256,26 +277,25 @@ main {
     font-size: 1.5rem;
 }
 
-/* section#biography card 02 */
+/* #biography card 02 */
 #biography {
+    width: 100%;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    height: fit-content;
-    text-align: center;
-    padding: 50px;
+    gap: 20px;
 }
 
 #biography h2 {
     font-size: 2rem;
 }
 
-#biography p {
-    font-size: 1.2rem;
-}
-
 #biography hr {
     border: 1px solid #000;
+}
+
+#biography p {
+    font-size: 1.2rem;
 }
 
 #grade,
@@ -289,54 +309,45 @@ main {
     font-size: 1.5rem;
 }
 
-/* ------------------------------------ */
-
-/* section#profile card 03 */
+/* section #profile card 03 */
 #hardskills {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    height: fit-content;
-    padding: 50px 0px;
-}
-
-#hardskills>div {
-    margin: 20px 0px;
-}
-
-#hardskills h2 {
-    font-size: 2.2rem;
     text-align: center;
-    padding: 20px 0px;
 }
 
 #technologies,
 #languages,
 #frameworks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#hardskills h2 {
+    font-size: 2rem;
+}
+
+.tech_skills {
+    width: 100%;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px 0px;
 }
 
-#technologies li,
-#languages li,
-#frameworks li {
+ul.tech_skills>li {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: center;
 }
 
-#technologies img,
-#languages img,
-#frameworks img {
+ul.tech_skills img {
     width: 80px;
+    height: 80px;
 }
 
-#technologies h3,
-#languages h3,
-#frameworks h3 {
+ul.tech_skills h3 {
     text-align: center;
-    font-size: 1.2rem;
+    margin: auto;
 }
 
 /* ------------------------------------ */
@@ -346,6 +357,7 @@ main {
 .projetos {
     background-color: var(--darkColor4);
     border-radius: 30px;
+    box-shadow: 0px 0px 5px black;
 }
 
 .aprendizado>h2,
@@ -355,43 +367,43 @@ main {
     text-align: center;
 }
 
+/* conteudo - cards */
 .conteudo {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-
-    height: 1800px;
+    padding: 10px;
 }
 
-/* section .aprendizado .projetos divisions */
-
-/* card part.1 - app */
+/* conteudo part.1 - .app */
 .app {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .app>h3 {
     font-size: 2rem;
-    padding: 20px 0px;
-
     height: 100px;
     text-align: center;
     align-content: center;
 }
 
 .app>video {
-    height: 600px;
+    width: 100%;
+    height: fit-content;
     border-radius: 10px;
     border: 5px solid black;
-    margin: 20px auto;
+    box-shadow: 0px 0px 5px black;
 }
 
-/* card part.2 - desc */
+/* conteudo part.2 - .desc */
 .desc {
-    height: 100%;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 900px;
 }
 
 .desc h3 {
@@ -401,7 +413,7 @@ main {
 .desc ul {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
 
 .desc li {
@@ -416,6 +428,97 @@ main {
 
 /* ------------------------------------ */
 
+.adicional {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+/* adicional part.1 - .down */
+.down {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.down ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.down li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 30px;
+    padding: 20px;
+    background-color: var(--darkColor3);
+    box-shadow: 0px 0px 5px black;
+}
+
+.down li>h4,
+.down li>p {
+    color: white;
+}
+
+.down li>h4 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.down li>p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.down li>a {
+    color: var(--darkColor4);
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+.down li>a>p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+}
+
+.down li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+
+
+/* adicional part.2 - .image */
+.image {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.navigation-mini h4 {
+    font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+    padding: 20px 30px;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: var(--white);
+    background-color: var(--darkColor3);
+    box-shadow: 0px 0px 5px black;
+}
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+
 /* footer#contact contacts */
 footer {
     background-color: var(--darkColor1);
@@ -424,7 +527,7 @@ footer {
 
 footer>h1 {
     color: var(--darkColor4);
-    padding: 30px;
+    margin: 30px 0px;
     font-size: 2.5rem;
     text-align: center;
 }
@@ -436,7 +539,7 @@ footer>h1 {
     list-style: none;
     gap: 20px;
     padding: 20px;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 #contact li {
@@ -453,6 +556,7 @@ footer>h1 {
     font-size: 1.5rem;
     padding: 0px 20px;
     border-radius: 50px;
+    box-shadow: 0px 0px 5px black;
 }
 
 #contact img {
@@ -467,6 +571,7 @@ footer>h1 {
 }
 
 /* ------------------------------------ */
+/* ------------------------------------ */
 
 /* carousel cards */
 .carousel-container {
@@ -478,7 +583,7 @@ footer>h1 {
     scroll-snap-type: x mandatory;
     /* Espaço entre cada card */
     gap: 10px;
-    padding: 0px 10px;
+    padding: 0px;
 
     /* Esconde a barra de rolagem visual no mobile */
     scrollbar-width: none;
@@ -496,23 +601,77 @@ footer>h1 {
     padding: 0px 10px;
 }
 
+/* MINI CAROUSEL MOBILE */
+
+.mini-carousel-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+/* 1ª Camada: O Container Externo (A Máscara) */
+.mini-carousel-container {
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    /* <- Isso remove a barra no Firefox */
+    scrollbar-width: none;
+    /* Firefox */
+    /* BARRA DE ROLAGEM - MINI CAROUSEL */
+}
+
+/* 2ª Camada: O Track (O Rolo de Filme) */
+.mini-track {
+    display: flex;
+    width: 80%;
+    gap: 30px;
+}
+
+/* 3ª Camada: Os Mini Cards / Prints */
+.mini-card {
+    /* No mobile: ocupa 100% da largura do .desc (1 por vez) */
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.mini-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid var(--black);
+    display: block;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px black;
+}
+
+/* / MINI CAROUSEL MOBILE */
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+
 /* --- CONFIGURAÇÃO PARA PC (Telas maiores que 768px) --- */
 @media (min-width: 768px) {
 
     /* header - titles */
-    #headerTitle {
+    #header_title {
         padding-left: 300px;
     }
 
-    #headerTitle>h1 {
+    #header_title>h1 {
         font-size: 4rem;
     }
 
-    #headerTitle>h2 {
+    #header_title>h2 {
         display: none;
     }
 
-    #headerTitle>h3 {
+    #header_title>h3 {
         display: block;
         font-size: 3rem;
         text-indent: 100px;
@@ -528,6 +687,21 @@ footer>h1 {
 
     #headerNav a {
         padding: 20px 30px;
+        box-shadow: 0px 0px 10px black;
+
+        /* effect */
+        border: 2px solid;
+        border-color: var(--white) transparent transparent var(--white);
+        transition: all 0.1s ease;
+        /* /effect */
+    }
+
+    #headerNav a:hover {
+        /* effect */
+        border-color: transparent var(--white) var(--white) transparent;
+        color: var(--white);
+        box-shadow: 0px 0px 5px white;
+        /* /effect */
     }
 
     /* ------------------------------------ */
@@ -544,17 +718,25 @@ footer>h1 {
     .navigation h1 {
         padding: 20px 50px;
         font-size: 3rem;
-        margin: 0px;
+        margin: 50px 0px;
         width: fit-content;
+        box-shadow: 0px 0px 10px black;
     }
 
     .navigation button {
         display: flex;
         padding: 20px 50px;
+        margin: 50px 0px;
         font-size: 3rem;
         border-radius: 50px;
         color: var(--darkColor4);
         background-color: var(--darkColor1);
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .navigation button:hover {
+        color: var(--white);
+        box-shadow: 0px 0px 5px white;
     }
 
     /* ------------------------------------ */
@@ -565,6 +747,11 @@ footer>h1 {
         margin: auto;
     }
 
+    .personal {
+        padding: 50px 20px;
+        box-shadow: 0px 0px 10px black;
+    }
+
     /* section#knowme card 01 */
     #knowme {
         flex-direction: row;
@@ -572,8 +759,8 @@ footer>h1 {
         gap: 100px;
     }
 
-    #myself {
-        gap: 50px;
+    #knowme>img {
+        box-shadow: 0px 0px 10px black;
     }
 
     #myself div {
@@ -583,6 +770,7 @@ footer>h1 {
 
     #myself h2 {
         font-size: 4rem;
+        margin: auto;
     }
 
     #myself p,
@@ -591,6 +779,10 @@ footer>h1 {
     }
 
     /* section#biography card 02 */
+    #biography {
+        gap: 50px;
+    }
+
     #biography h2 {
         font-size: 3rem;
     }
@@ -606,9 +798,13 @@ footer>h1 {
         font-size: 2rem;
     }
 
-    #biography p,
-    #grade p {
+    #grade p,
+    #hero p {
         font-size: 1.5rem;
+    }
+
+    #hero p {
+        margin: 0px 100px;
     }
 
     /* ------------------------------------ */
@@ -624,18 +820,26 @@ footer>h1 {
         font-size: 3rem;
     }
 
-    #languages,
-    #frameworks,
-    #technologies {
-        gap: 30px;
+    .tech_skills {
+        gap: 20px;
+    }
+
+    ul.tech_skills img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul.tech_skills h3 {
+        font-size: 1.5rem;
     }
 
     /* ------------------------------------ */
 
-    /* section.aprendizado cards */
+    /* section .aprendizado .projetos cards */
     .aprendizado,
     .projetos {
         width: 1600px;
+        box-shadow: 0px 0px 10px black;
     }
 
     .aprendizado>h2,
@@ -644,33 +848,41 @@ footer>h1 {
         font-size: 2.5rem;
     }
 
+    /* conteudo - cards */
     .conteudo {
         display: flex;
         flex-direction: row;
-        height: 700px;
+        padding: 20px 50px;
+        height: 750px;
     }
 
-    /* section .aprendizado .projetos divisions */
 
-    /* card part.1 - app */
+    /* conteudo part.1 - .app */
     .app {
         width: 25%;
+        padding: 20px;
         justify-content: center;
+        height: auto;
     }
 
     .app>h3 {
         display: none;
     }
 
-    /* card part.2 - app_desc*/
+    .app>video {
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .app>video:hover {
+        box-shadow: 0px 0px 5px white;
+    }
+
+    /* conteudo part.2 - .desc*/
     .desc {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
         width: 75%;
         align-items: center;
-        justify-content: center;
-        margin-right: 50px;
+        gap: 30px;
+        height: auto;
     }
 
     .desc>h3 {
@@ -678,8 +890,75 @@ footer>h1 {
         font-size: 2.5rem;
     }
 
+    .desc ul {
+        gap: 30px;
+    }
+
     .desc p {
         font-size: 1.5rem;
+    }
+
+    /* ------------------------------------ */
+
+    /* adicional - cards */
+    .adicional {
+        display: flex;
+        flex-direction: row;
+        padding: 0px 50px 50px 50px;
+        height: 750px;
+    }
+
+    /* adicional part.1 - .down */
+    .down {
+        width: 25%;
+        padding: 0px 20px;
+        justify-content: center;
+        height: auto;
+    }
+
+    .down ul {
+        gap: 40px;
+    }
+
+    .down li {
+        /* effect */
+        border: 2px solid;
+        border-color: var(--white) transparent transparent var(--white);
+        transition: all 0.1s ease;
+        /* /effect */
+    }
+
+
+    .down li:hover {
+        /* effect */
+        border-color: transparent var(--white) var(--white) transparent;
+        box-shadow: 0px 0px 5px white;
+        /* /effect */
+    }
+
+    .down li>a:hover {
+        color: var(--white);
+    }
+
+    .down li img {
+        box-shadow: 0px 0px 10px black;
+    }
+
+
+    /* adicional part.2 - .image*/
+    .image {
+        width: 75%;
+        align-items: center;
+
+        padding: 0px;
+        /* O container de imagem herda a altura flexível/restante do pai (.adicional) */
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .navigation-mini h4 {
+        font-size: 1.5rem;
+        box-shadow: 0px 0px 10px black;
     }
 
     /* ------------------------------------ */
@@ -702,14 +981,29 @@ footer>h1 {
     #contact li {
         border-radius: 100px;
         width: 400px;
-        /*
-        margin: auto;
-        */
     }
 
     #contact a {
         font-size: 2.5rem;
+        box-shadow: 0px 0px 10px black;
+
+        /* effect */
+        border: 2px solid;
+        border-color: var(--white) transparent transparent var(--white);
+        transition: all 0.1s ease;
+        /* /effect */
     }
+
+    #contact a:hover {
+        /* effect */
+        border-color: transparent var(--white) var(--white) transparent;
+        color: var(--white);
+        box-shadow: 0px 0px 5px white;
+        /* /effect */
+        color: var(whi);
+        box-shadow: 0px 0px 5px white;
+    }
+
 
     #contact img {
         border-radius: 25px;
@@ -718,16 +1012,135 @@ footer>h1 {
 
     /* ------------------------------------ */
 
+    /* CAROUSEL DESKTOP */
+
     /* carousel cards */
     .carousel-container {
-        gap: 200px;
+        gap: 100px;
+        /*
+        padding: 0px 40vw;
         padding: 0px 50vw;
+        */
+        padding: 0px calc(50vw - 150px);
+        box-sizing: border-box;
     }
 
     .card {
         flex: 0 0 1400px;
     }
 
+    /* / CAROUSEL DESKTOP */
+
+    /* ------------------------------------ */
+
+    /* MINI CAROUSEL DESKTOP */
+
+    /* --- AJUSTE DO MINI CAROUSEL PARA DESKTOP --- */
+
+    /* O wrapper do mini carrossel ocupa o espaço remanescente abaixo do título */
+    .mini-carousel-wrapper {
+        flex: 1;
+        /* Ocupa a altura máxima restante */
+        height: 0;
+        /* Importante para o flexbox gerenciar o redimensionamento interno */
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: transparent;
+        /* Remova se quiser manter a cor de fundo antiga */
+    }
+
+    /* O container externo (máscara) preenche o wrapper */
+    .mini-carousel-container {
+        width: 100%;
+        flex: 1;
+        height: 100%;
+        margin: 0;
+        overflow-x: auto;
+        padding-bottom: 20px;
+
+        /* Garante que a barra apareça no Firefox */
+        scrollbar-width: auto;
+        scrollbar-color: var(--darkColor4) var(--darkColor3);
+        /* BARRA DE ROLAGEM - MINI CAROUSEL */
+    }
+
+    .mini-carousel-container::-webkit-scrollbar {
+        /* Habilita a exibição */
+        display: block;
+        /* Altura da barra de rolagem horizontal */
+        height: 8px;
+
+        /* <- Isso remove a barra no Chrome, Safari e Opera */
+        /*display: none;*/
+        /* Chrome, Safari, Opera */
+        /* BARRA DE ROLAGEM - MINI CAROUSEL */
+    }
+
+    /* Fundo da barra de rolagem */
+    .mini-carousel-container::-webkit-scrollbar-track {
+        background: var(--darkColor3);
+        border-radius: 10px;
+        /* BARRA DE ROLAGEM - MINI CAROUSEL */
+    }
+
+    /* O "puxador" da barra de rolagem */
+    .mini-carousel-container::-webkit-scrollbar-thumb {
+        background: var(--darkColor4);
+        border-radius: 10px;
+        /* BARRA DE ROLAGEM - MINI CAROUSEL */
+    }
+
+    .mini-carousel-container::-webkit-scrollbar-thumb:hover {
+        background: var(--white);
+        /* BARRA DE ROLAGEM - MINI CAROUSEL */
+    }
+
+    /* O track (trilho) alinha os itens na altura total */
+    .mini-track {
+        display: flex;
+        height: 100%;
+        width: auto;
+        /* Permite crescer horizontalmente conforme os prints */
+        gap: 50px;
+    }
+
+    /* Cada mini card acompanha 100% da altura do track */
+    .mini-card {
+        flex: 0 0 auto;
+        /* Ajusta a largura de forma automática conforme a imagem */
+        height: 100%;
+        scroll-snap-align: start;
+    }
+
+    /* As imagens preenchem 100% da altura do card mantendo a proporção */
+    .mini-card img {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+        /* Ou 'cover' caso prefira preencher cortando as laterais */
+        border-radius: 12px;
+        border: 3px solid var(--black);
+        display: block;
+    }
+
+    /* / MINI CAROUSEL DESKTOP */
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+
+    /* TEMPORARIO */
+
+    /* ENCONTRAR VAZAMENTO HORIZONTAL */
+    /*
+    * {
+        outline: 1px solid #ff0000 !important;
+    }
+    */
+
+    /* / TEMPORARIO */
+
+    /* ------------------------------------ */
     /* ------------------------------------ */
 
     .bat {
