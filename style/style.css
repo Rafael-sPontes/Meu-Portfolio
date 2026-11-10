@@ -390,7 +390,7 @@ ul.tech_skills h3 {
 }
 
 .app_video {
-    height: 560px;
+    height: 700px;
     align-content: center;
 }
 
@@ -614,7 +614,7 @@ footer>h1 {
     flex-direction: column;
     gap: 20px;
     padding: 20px 0px;
-    height: 500px;
+    height: 550px;
 }
 
 /* 1ª Camada: O Container Externo (A Máscara) */
