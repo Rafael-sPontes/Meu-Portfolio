@@ -105,7 +105,6 @@
                         </div>
                     </div>
 
-
                     <h2>Desenvolvedor Mobile Android</h2>
 
                     <div id="hero">
@@ -116,9 +115,7 @@
                         <p>
                             Tenho dedicação à construção de interfaces limpas seguindo as diretrizes do <strong>Material
                                 Design</strong> e à aplicação de boas práticas, garantindo um código escalável e de
-                            fácil
-                            manutenção.
-                        </p>
+                            fácil manutenção.</p>
                     </div>
 
                 </section>
@@ -222,6 +219,43 @@
             <!-- section aprendizado - carrossel -->
             <section class="carousel-container">
 
+                <!-- aprendizado card 09 -->
+                <article class="card">
+                    <section class="aprendizado">
+                        <h2>Stack Mobile</h2>
+                        <hr>
+                        <div class="conteudo">
+                            <!-- O Contêiner da Rolagem (Tracks) -->
+                            <div class="app">
+                                <h3>Meu Portfólio</h3>
+                                <video src="videos/aprendizado/aprendizado_app_MeuPortfolio_480p_50_video.webm"
+                                    poster="videos/aprendizado/aprendizado_app_MeuPortfolio_480p_50_thumb.png" controls
+                                    loop playsinline></video>
+                            </div>
+                            <div class="desc">
+                                <h3>Meu Portfólio</h3>
+                                <ul>
+                                    <li>
+                                        <p><strong>O que é:</strong> aplicativo de apresentação pessoal em 3 telas
+                                            (Perfil, Projetos e Contatos), exibindo informações profissionais, portfolio
+                                            de projetos e canais diretos de comunicação.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Construção:</strong> desenvolvido em Kotlin com ViewBinding,
+                                            ScrollView para textos em HTML via strings.xml, recorte de imagem nativo com
+                                            RoundedBitmapDrawableFactory e Intent implícita para WhatsApp.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Objetivo:</strong> praticar navegação multi-telas com Intents,
+                                            manipulação de imagens nativas sem bibliotecas externas e estilização de
+                                            layout com componentes de rolagem e strings formatadas.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+
                 <!-- aprendizado card 08 -->
                 <article class="card">
                     <section class="aprendizado">
@@ -242,8 +276,7 @@
                                         <p><strong>O que é:</strong> o app simula a tela de conversas de um aplicativo
                                             de mensagens,
                                             exibindo uma lista dinâmica contendo fotos de perfil circulares, nomes de
-                                            usuários e mensagens recentes.
-                                        </p>
+                                            usuários e mensagens recentes.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> desenvolvido em Java com "ConstraintLayout"
@@ -252,7 +285,7 @@
                                             customizados ("adapterUsuario" e "UsuarioViewHolder"), uma biblioteca
                                             "CircleImageView" para o recorte das fotos e a classe auxiliar
                                             "RecyclerItemClickListener" com o tratamento de "onSingleTapConfirmed" para
-                                            gerenciar os eventos de toque. </p>
+                                            gerenciar os eventos de toque.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> consolidar o aprendizado sobre o componente
@@ -288,8 +321,7 @@
                                             principais de um
                                             aplicativo de banco digital. Conta com uma tela principal em grade para
                                             acesso a seções como Saldo, Faturas, Transferência e Poupança, além
-                                            das credenciais de um cartão de crédito virtual.
-                                        </p>
+                                            das credenciais de um cartão de crédito virtual.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> desenvolvido em Java e com uso de
@@ -305,8 +337,7 @@
                                             "Intents", otimizar a
                                             organização e limpeza do código de eventos de clique, além de aprender a
                                             integrar e configurar bibliotecas externas para enriquecer o design visual e
-                                            a usabilidade do aplicativo.
-                                        </p>
+                                            a usabilidade do aplicativo.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -335,8 +366,7 @@
                                             em um reproductor
                                             simples de mídia com três botões interativos (Pause, Play e Stop),
                                             controlando a reprodução conforme as ações do usuário e os eventos do
-                                            sistema.
-                                        </p>
+                                            sistema.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> desenvolvido em Java com layout em
@@ -344,16 +374,14 @@
                                             contendo elementos "ImageView". O projeto faz uso do "MediaPlayer" para
                                             reprodução de áudio armazenado na pasta res/raw e recursos visuais em
                                             res/drawable, além de gerenciar o fluxo de áudio nos métodos do ciclo de
-                                            vida "onResume", "onStop" e "onDestroy".
-                                        </p>
+                                            vida "onResume", "onStop" e "onDestroy".</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> demonstrar na prática o ciclo de vida de uma
                                             Activity (trata ações
                                             ao minimizar, maximizar e fechar o app) e o uso da classe "MediaPlayer",
                                             ensinando a organização adequada de arquivos de mídia (imagens e áudio) na
-                                            estrutura do projeto Android.
-                                        </p>
+                                            estrutura do projeto Android.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -381,8 +409,7 @@
                                         <p><strong>O que é:</strong> o app tem como proposta calcular o Índice de Massa
                                             Corporal a partir
                                             do peso e da altura informados, exibindo a classificação do resultado e um
-                                            botão no menu superior para resetar os campos.
-                                        </p>
+                                            botão no menu superior para resetar os campos.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> construído em "LinearLayout" e desenvolvido em
@@ -390,15 +417,13 @@
                                             adota componentes Material3 como "TextInputLayout" e "TextInputEditText".
                                             Utiliza "ViewBinding", validação de campos vazios, menu de opções via
                                             "onCreateOptionsMenu" e estruturas condicionais para calcular e classificar
-                                            o IMC.
-                                        </p>
+                                            o IMC.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> o foco do projeto é evoluir o visual de
                                             formulários aplicando
                                             componentes Material Design e trabalhar com menus de ação no Toolbar (Menu
-                                            XML), além de praticar cálculos com validações de entrada em Java.
-                                        </p>
+                                            XML), além de praticar cálculos com validações de entrada em Java.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -426,23 +451,20 @@
                                         <p><strong>O que é:</strong> o app tem como proposta permitir que o usuário
                                             escolha uma cor para
                                             personalizar o fundo do aplicativo, salvando essa preferência para ser
-                                            mantida nas próximas execuções.
-                                        </p>
+                                            mantida nas próximas execuções.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> a interface combina "LinearLayout" (vertical e
                                             horizontal) em um
                                             "HorizontalScrollView". Utiliza "ViewBinding", tratamento de cores via
                                             "Color.parseColor", avisos com "Snackbar" e salvamento/recuperação de dados
-                                            no "SharedPreferences" dentro do "onResume".
-                                        </p>
+                                            no "SharedPreferences" dentro do "onResume".</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> demonstrar a aplicação prática de
                                             "SharedPreferences" para guardar
                                             configurações do usuário e praticar a restauração de estados no ciclo de
-                                            vida (onResume).
-                                        </p>
+                                            vida (onResume).</p>
                                     </li>
                                 </ul>
                             </div>
@@ -470,8 +492,7 @@
                                         <p><strong>O que é:</strong> o app tem como proposta gerar uma combinação
                                             aleatória composta por
                                             duas letras e quatro números ao clicar em um botão, exibindo o resultado
-                                            diretamente na tela.
-                                        </p>
+                                            diretamente na tela.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> o app é baseado em "LinearLayout" de orientação
@@ -480,16 +501,14 @@
                                             exibição da senha) e um "Button". O acesso aos componentes do layout é
                                             realizado via "ViewBinding", e a lógica de geração utiliza um array de
                                             strings contendo o alfabeto combinado com funções da biblioteca de "Random"
-                                            do Kotlin.
-                                        </p>
+                                            do Kotlin.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> o objetivo deste projeto é aplicar o "ViewBinding"
                                             para vinculação
                                             de views no Kotlin, além de praticar a manipulação de arrays e o uso da
                                             biblioteca "kotlin.random.Random" para a geração de valores aleatórios em
-                                            tempo de execução.
-                                        </p>
+                                            tempo de execução.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -517,8 +536,7 @@
                                         <p><strong>O que é:</strong> o app busca fornecer um bloco de anotações simples
                                             e direto,
                                             permitindo que o usuário digite textos em múltiplas linhas, salve as
-                                            informações e edite o conteúdo sempre que necessário.
-                                        </p>
+                                            informações e edite o conteúdo sempre que necessário.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> construído sobre "ConstraintLayout", o
@@ -526,15 +544,13 @@
                                             "EditText" multilinha para inserção de texto e um "FloatingActionButton"
                                             para acionar o salvamento. A persistência dos dados é feita através de
                                             "SharedPreferences", gravando o texto no formato chave-valor para que as
-                                            anotações permaneçam salvas mesmo após fechar o app.
-                                        </p>
+                                            anotações permaneçam salvas mesmo após fechar o app.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> além da construção de interface com
                                             "ConstraintLayout" e
                                             "FloatingActionButton", o foco do projeto foi introduzir a
-                                            persistência de dados simples com "SharedPreferences" na prática.
-                                        </p>
+                                            persistência de dados simples com "SharedPreferences" na prática.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -564,8 +580,7 @@
                                             notas de um aluno e
                                             exibir o resultado final acompanhado do total de faltas. Com base na média
                                             mínima 5.0 e no limite de 20 faltas, o sistema classifica a situação do
-                                            aluno em Aprovado ou Reprovado.
-                                        </p>
+                                            aluno em Aprovado ou Reprovado.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> a interface foi desenvolvida em "RelativeLayout"
@@ -573,15 +588,13 @@
                                             "EditText", "Button" e "TextView". Para garantir a centralização adequada em
                                             telas de diferentes dimensões, os campos de entrada foram agrupados em uma
                                             "View" contêiner. O código recupera as referências via "findViewById" e
-                                            realiza o cálculo iterando sobre um array de valores.
-                                        </p>
+                                            realiza o cálculo iterando sobre um array de valores.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> este foi o primeiro projeto prático desenvolvido
                                             do zero com o
                                             intuito de consolidar a criação de layouts XML, o uso do findViewById e a
-                                            manipulação direta de componentes de texto e entrada.
-                                        </p>
+                                            manipulação direta de componentes de texto e entrada.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -632,21 +645,19 @@
                                         <p><strong>O que é:</strong> aplicativo dedicado a gamers para catalogar e
                                             gerenciar a jornada de
                                             jogatinas. Permite registrar títulos, plataformas, progresso, notas e
-                                            avaliações personalizadas (reviews).
-                                        </p>
+                                            avaliações personalizadas (reviews).</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> desenvolvido em Kotlin estruturado em
                                             arquitetura MVVM,
                                             utilizando XML / Material Design, persistência local com Room Database,
-                                            Injeção de Dependências com Hilt e Splash Screen dedicada. </p>
+                                            Injeção de Dependências com Hilt e Splash Screen dedicada.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> consolidar o desenvolvimento de aplicações Android
                                             completas e
                                             escaláveis, unindo uma interface moderna e intuitiva à robustez de um
-                                            gerenciamento de dados estruturado.
-                                        </p>
+                                            gerenciamento de dados estruturado.</p>
                                     </li>
                                 </ul>
                             </div>
@@ -750,22 +761,19 @@
                                         <p><strong>O que é:</strong> um guia interativo de referência web que apresenta
                                             a renderização de
                                             elementos fundamentais do HTML5 e CSS3 lado a lado com os seus respectivos
-                                            trechos de código-fonte.
-                                        </p>
+                                            trechos de código-fonte.</p>
                                     </li>
                                     <li>
                                         <p><strong>Construção:</strong> desenvolvido com HTML5 semântico e CSS3 puro,
                                             organizado em um
                                             layout de três colunas (código HTML, elemento visualizado e código CSS)
-                                            cobrindo tabelas, mídias e tipografia.
-                                        </p>
+                                            cobrindo tabelas, mídias e tipografia.</p>
                                     </li>
                                     <li>
                                         <p><strong>Objetivo:</strong> consolidar o domínio da estrutura e estilização
                                             web, criando uma
                                             documentação visual e interativa para rápida consulta de sintaxes e boas
-                                            práticas de desenvolvimento front-end.
-                                        </p>
+                                            práticas de desenvolvimento front-end.</p>
                                     </li>
                                 </ul>
                             </div>
